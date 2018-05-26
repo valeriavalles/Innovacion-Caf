@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Presents from './components/present'
+import Presents from './components/present';
+import Bts from './components/Botons'
 import './App.css';
 
 class App extends Component {
@@ -8,11 +9,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <Presents />
-          <p className="App-intro">
-          Lorem Lorem 
-        </p>
         </header>
-        
+        <Bts /> 
       </div>
     );
   }

@@ -11,7 +11,12 @@
   background-color: #222;
   height: 150px;
   padding: 20px;
+  margin-bottom: 5%;
+  margin-top: 5%;
   color: white;
+}
+.btn2 {
+  margin-top: 5%;
 }
 
 .App-title {

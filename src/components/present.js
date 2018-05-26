@@ -9,7 +9,13 @@ class Presents extends Component {
                     imagen 
                 </figure>
                 <div>
-                    Descripcion
+                    <p>
+                    !Comencemos nuestra ruta del ahorro!
+                    </p>
+                    <p>
+                        Dínos si quieres hacerlos de manera <br/> 
+                        personal o en grupo
+                    </p>
                 </div>
             </div>
         )
