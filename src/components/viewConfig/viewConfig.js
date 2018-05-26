@@ -74,7 +74,7 @@ class ViewConfig extends  Component {
                   <input  class="col-1" placeHolder="Mes"/>
                   <input  class="col-1"s placeHolder="Año"/>
                 </div>
-                <div>
+                <div className="user">
                 {this.state.partner} 
                 
                 </div>

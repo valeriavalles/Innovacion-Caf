@@ -34,9 +34,14 @@ class App extends Component {
         <Presents  />
         <Bts vistaPromo={()=> this.setState({
              vista: 'promo'
-       })}/>
+        })}
+       vistaConf={()=> this.setState({
+        vista: 'config'
+      })}
+       />
         </div> : 
-       this.state.vista === 'promo' ? <Promo /> : null 
+       this.state.vista === 'promo' ? <Promo /> :
+       this.state.vista === 'config' ? <ViewConfig/>: null
       }
       </div>
 
