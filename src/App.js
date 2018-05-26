@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Presents from './components/present'
+import ViewConfig from './components/viewConfig/viewConfig'
+
 import './App.css';
 
 class App extends Component {
@@ -12,6 +14,9 @@ class App extends Component {
           Lorem Lorem 
         </p>
         </header>
+        <main>
+          <ViewConfig/>
+        </main>
         
       </div>
     );

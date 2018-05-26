@@ -1,0 +1,22 @@
+.date{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+input{
+  margin: 10px 5px;
+
+}
+
+label{
+  display:block;
+  margin:5px 0;
+  color: rgb(39, 39, 63)
+}
+
+button{
+  background-color: rgb(35, 35, 71);
+  color: white;
+}
