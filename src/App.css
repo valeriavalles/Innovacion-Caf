@@ -6,6 +6,12 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
+.cont-btn {
+  border: 2px solid rgb(109, 102, 102);
+  background: rgb(131, 130, 130);
+  color: white;
+  border-radius: 8px;
+}
 
 .App-header {
   background-color: #222;
@@ -18,7 +24,9 @@
 .btn2 {
   margin-top: 5%;
 }
-
+img {
+  width: 100px;
+}
 .App-title {
   font-size: 1.5em;
 }
