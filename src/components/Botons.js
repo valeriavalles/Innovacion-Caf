@@ -21,7 +21,9 @@ class Bts extends Component {
             <div className="row btn2">
                 <div className="col-md-12 ">
                  
-                <button type="button" className="btn btn-primary btn-lg">¡Promociones Inteligentes</button>
+                <button type="button" className="btn btn-primary btn-lg" onClick={()=> {
+                    this.props.vistaPromo()
+                }}>¡Promociones Inteligentes</button>
                 </div>
                 
             </div>

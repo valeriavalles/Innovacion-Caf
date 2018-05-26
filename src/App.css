@@ -1,10 +1,24 @@
 .App {
   text-align: center;
+  
 }
-
+h2 {
+  margin-bottom: 5%;
+}
+.mg-categorias {
+  margin-top: 25%;
+  text-align: center;
+}
+.mg-rebajas {
+  margin-bottom: 25%;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
+}
+.bg-color {
+  color: #fff;
+ 
 }
 .cont-btn {
   border: 2px solid rgb(109, 102, 102);
