@@ -18,16 +18,6 @@ class App extends Component {
 
   render() {
     return (
-      // <div className="App">
-      //   <header className="App-header">
-      //     <Presents />
-      //     <p className="App-intro">
-      //     Lorem Lorem 
-      //   </p>
-      //   </header>
-      //   <main>
-      //     <ViewConfig/>
-      //   </main>
       
       <div className="App text-center">
         {this.state.vista === 'principal' ? <div >
