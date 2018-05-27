@@ -11,6 +11,8 @@ h2 {
 }
 .mg-rebajas {
   margin-bottom: 25%;
+  margin-top: 10%;
+  color:white;
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -18,6 +20,7 @@ h2 {
 }
 .bg-color {
   color: #fff;
+  text-align: center;
  
 }
 .cont-btn {

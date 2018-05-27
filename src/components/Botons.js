@@ -7,9 +7,9 @@ class Bts extends Component {
             
             <div className="container ">
             <div className="row ">
-                <div className="col-md-3 cont-btn btn mx-auto">
-
-    
+                <div className="col-md-3 cont-btn btn mx-auto" onClick={()=> {
+                    this.props.vistaConf()
+                }} >
                   <img className="mx-auto" src="https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_user-512.png"/>
                   <p>¡Yo mismo/a Soy</p>
                 </div>
