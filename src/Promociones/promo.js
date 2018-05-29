@@ -12,7 +12,7 @@ class Promo extends Component {
               <div className="col-sm-4">
                 <div className="card">
                     <div className="card-body">
-                    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzrZKdr0rknMEvL9bbMpgty80n7zz87U-Qa3s6FQnOIMi7dVzAqw"/>
+                    <img className="btn-user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzrZKdr0rknMEvL9bbMpgty80n7zz87U-Qa3s6FQnOIMi7dVzAqw"/>
                     <a href="#" className="btn btn-primary">Hogar</a>
                      </div>
                 </div>
@@ -20,7 +20,7 @@ class Promo extends Component {
              <div className="col-sm-4">
                 <div className="card">
                 <div className="card-body">
-                  <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCfm4DiBV0ziKWhKUZIf3zjwIvHUoP9s9g-PtLx14mizFDhPNj"/>
+                  <img className="btn-user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCfm4DiBV0ziKWhKUZIf3zjwIvHUoP9s9g-PtLx14mizFDhPNj"/>
                 <a href="#" className="btn btn-primary">Tecnologia</a>
                 </div>
                 </div>
@@ -28,7 +28,7 @@ class Promo extends Component {
             <div className="col-sm-4">
             <div className="card">
                 <div className="card-body">
-                  <img src="http://chittagongit.com//images/hobbies-icon/hobbies-icon-2.jpg" />
+                  <img className="btn-user" src="http://chittagongit.com//images/hobbies-icon/hobbies-icon-2.jpg" />
                 <a href="#" className="btn btn-primary">Hobbies</a>
                 </div>
             </div>
