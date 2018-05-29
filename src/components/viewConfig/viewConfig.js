@@ -45,8 +45,9 @@ import './viewConfig.css';
 // ];
 
 class ViewConfig extends  Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
     this.state = {
       partner:'',
       cant:'',
@@ -59,20 +60,20 @@ class ViewConfig extends  Component {
     render(){
         return (
           <section>
-            <div class="container">
-              <div class="row">
-                <div class=" col-12 col-md-12 col-sm-12 col-lg-12">
+            <div className="container">
+              <div className="row">
+                <div className=" col-12 col-md-12 col-sm-12 col-lg-12">
                   <label>Elige tu Partner Financiero!</label>
-                  <input id="nameElement" class="col-3"  placeHolder="Ingresa el nombre de tu partner" value={this.state.partner} onChange={this.update.bind(this)}/>
+                  <input id="nameElement" className="col-3"  placeHolder="Ingresa el nombre de tu partner" value={this.state.partner} onChange={this.update.bind(this)}/>
                   <button onClick={this.addPartner.bind(this)}>add</button>
                   <br/>
                   <label>Ingresa el monto</label>
-                  <input class="col-1"  placeHolder=""/>
+                  <input className="col-1"  placeHolder=""/>
                   <br/>
                   <label>Ingresa el tiempo de tu plazo de ahorro</label>
-                  <input  class="col-1" placeHolder="Día"/>
-                  <input  class="col-1" placeHolder="Mes"/>
-                  <input  class="col-1"s placeHolder="Año"/>
+                  <input  className="col-1" placeHolder="Día"/>
+                  <input  className="col-1" placeHolder="Mes"/>
+                  <input  className="col-1" splaceHolder="Año"/>
                 </div>
                 <div className="user">
                 {this.state.partner} 

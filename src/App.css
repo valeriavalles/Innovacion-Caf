@@ -24,25 +24,32 @@ h2 {
  
 }
 .cont-btn {
-  border: 2px solid rgb(109, 102, 102);
-  background: rgb(131, 130, 130);
-  color: white;
-  border-radius: 8px;
+  background: rgb(241, 216, 69);
+  font-weight: 700;
+}
+.cont-text-present {
+  margin-top: 2%;
+  margin-bottom: 0.2%;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  margin-bottom: 5%;
-  margin-top: 5%;
-  color: white;
-}
 .btn2 {
-  margin-top: 5%;
+  margin-top: 1.2%;
 }
-img {
-  width: 100px;
+
+.logo-chan {
+  width: 250px;
+}
+.figure-logo {
+  margin-top: 4%;
+}
+
+.btn-user {
+  width: 70px;
+}
+.mg {
+  border-radius: 18px;
+  margin: 3%;
 }
 .App-title {
   font-size: 1.5em;
