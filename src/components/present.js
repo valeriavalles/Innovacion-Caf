@@ -10,7 +10,8 @@ class Presents extends Component {
                 </figure>
                 <div className="cont-text-present">
                     <h3>
-                    !Comencemos nuestra ruta del ahorro!
+                    !Comencemos nuestra 
+                     ruta del ahorro!
                     </h3>
                     <p>
                         Dínos si quieres hacerlos de manera <br/> 

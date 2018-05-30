@@ -19,18 +19,26 @@ h2 {
   height: 80px;
 }
 .bg-color {
-  color: #fff;
+  /* color: #fff; */
   text-align: center;
  
 }
+.color-bg {
+  background: #fff;
+}
 .cont-btn {
   background: rgb(241, 216, 69);
-  font-weight: 700;
+ font-size: 12px;
+ font-weight: 700;
 }
 .cont-text-present {
   margin-top: 2%;
   margin-bottom: 0.2%;
-  color: #fff;
+  color: rgb(65, 64, 64)
+  /* color: #fff; */
+}
+.cont-text-present h3 {
+  font-weight: 700;
 }
 
 .btn2 {

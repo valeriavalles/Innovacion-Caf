@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Nota from './Notas'
 import './viewConfig.css';
 
 // var partners = [
@@ -49,53 +50,100 @@ class ViewConfig extends  Component {
     super(props);
 
     this.state = {
-      partner:'',
-      cant:'',
-      day:'',
-      mont:'',
-      year:''
+      noteText:'',
+      notes:[]
     }
   }
+
+  updateNoteText(noteText) {
+    this.setState({ 
+       noteText: noteText.target.value
+       })
+    
+  }
+
+  addNote() {
+    
+    if( this.state.noteText === '') {return false}
+    let notesArr = this.state.notes;
+    notesArr.push(this.state.noteText);
+    this.setState({ noteText: ''});
+    this.textInput.focus();
+    
+
+  }
+
+  handleKeyPress = (event) => {
+    if(event.key === 'Ent'){
+    }
+  }
+
+  deleteNote(index){
+       let notesArr = this.state.notes;
+       notesArr.splice(index, 1);
+       this.setState({ notes: notesArr })
+     }
     
     render(){
+
+      let notes = this.state.notes.map((val, key ) => {
+        return <Nota className="col-md-4 bg-primary "  key={key} text={val}
+                      deleteMethod={ () => this.deleteNote(key)} />
+           })
+      
+      //const notes = this.props.notes
+      
         return (
           <section>
             <div className="container">
-              <div className="row">
-                <div className=" col-12 col-md-12 col-sm-12 col-lg-12">
+              <div className="row ">
+                <div className=" col-12 col-md-12 col-sm-12 col-lg-12 ">
+                 <center>
+                   <h3 className="h3-pinky">¿Quienes te acompañarán <br/>
+                    en tu  ruta de ahorro ?</h3>
                   <label>Elige tu Partner Financiero!</label>
-                  <input id="nameElement" className="col-3"  placeHolder="Ingresa el nombre de tu partner" value={this.state.partner} onChange={this.update.bind(this)}/>
-                  <button onClick={this.addPartner.bind(this)}>add</button>
-                  <br/>
-                  <label>Ingresa el monto</label>
-                  <input className="col-1"  placeHolder=""/>
-                  <br/>
-                  <label>Ingresa el tiempo de tu plazo de ahorro</label>
-                  <input  className="col-1" placeHolder="Día"/>
-                  <input  className="col-1" placeHolder="Mes"/>
-                  <input  className="col-1" splaceHolder="Año"/>
-                </div>
-                <div className="user">
-                {this.state.partner} 
-                
-                </div>
+                  <input  
+                    className="form-control  col-md-5"
+                    placeholder="Ingresa el nombre de tu partner"
+                    ref={((input) => this.textInput = input )}
+                    value={this.state.noteText}
+                    onChange={ noteText =>  this.updateNoteText(noteText)}
+                    onKeyPress={ this.handleKeyPress.bind(this)}
+                    />
+                 </center>
+                  <button 
+                  className="btn "
+                   onClick={this.addNote.bind(this)}
+                   >Agregar más</button> 
+                   <button className="btn">Invitar</button>
+                    <br/>
+
+                   <label>Ingresa el monto</label>
+                  <input className="form-control col-md-2 mx-auto"  placeholder="Monto"/>
+                </div> 
+              </div>
+              
+              
+              <div className="row ">
+                 <label className="mx-auto col-md-12">Ingresa el tiempo de tu plazo de ahorro</label> 
+                  <center>
+                    <input  className=" input-x col-11 col-md-2" placeholder="Día"/>
+                    <input  className=" input-x col-11 col-md-2" placeholder="Mes"/>
+                    <input  className=" input-x col-11 col-md-2" placeholder="Año"/>
+                  </center>
+              </div>
+              <div className="row conten-partner">
+                    { notes }
               </div>
             </div>
           </section>
         )
     }
 
-    update(event) {
-      this.setState({
-        partner: event.target.value
-      })
-    }
+    
   
-    addPartner() {
-      let add = this.state.partner
-      console.log(add)
-
-    }
+    
+  
 }
 
 export default ViewConfig; 

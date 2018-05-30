@@ -28,10 +28,11 @@ class App extends Component {
        vistaConf={()=> this.setState({
         vista: 'config'
       })}
+      
        />
         </div> : 
        this.state.vista === 'promo' ? <Promo /> :
-       this.state.vista === 'config' ? <ViewConfig/>: null
+       this.state.vista === 'config' ? <ViewConfig />: null
       }
       </div>
 
